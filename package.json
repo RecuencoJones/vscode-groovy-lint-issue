@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint": "npm-groovy-lint --config .groovylintrc.json --failon info --path src"
+  },
+  "devDependencies": {
+    "npm-groovy-lint": "7.6.3"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "groovyLint.basic.config": ".groovylintrc.json",
+  "groovyLint.basic.loglevel": "info",
+  "groovyLint.fix.enable": true
+}

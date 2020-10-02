@@ -1,0 +1,24 @@
+apply plugin: 'groovy'
+apply plugin: 'codenarc'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.4.12'
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src']
+        }
+    }
+}
+
+codenarc {
+    configFile new File('./codenarc.groovy')
+    toolVersion = '1.5'
+    reportFormat 'console'
+}
